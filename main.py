@@ -38,7 +38,7 @@ llm1 = ChatOpenAI()
 llm2 = ChatOpenAI()
 
 # Example function to simulate a conversation
-def conduct_conversation(start_input, turns=5):
+def conduct_conversation(, turns=5):
     current_input = start_input
     for _ in range(turns):
         response = chat_with_llm(current_input, llm1, history)
@@ -50,5 +50,4 @@ def conduct_conversation(start_input, turns=5):
         current_input = response
 
 # Start the conversation
-initial_input = "Hello, how are you?"
-conduct_conversation(initial_input)
+conduct_conversation()
